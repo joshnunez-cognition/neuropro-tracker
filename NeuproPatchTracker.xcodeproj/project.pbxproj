@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026749238C7E2714CDCF1BCA /* PlacementFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CAFC073E285844A1C3DF28 /* PlacementFlowView.swift */; };
+		08237A317B85915E6B0ABD0C /* CycleManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D87ED146E3C62E9C91AFF10 /* CycleManagerTests.swift */; };
+		15A72D7F03506B6FD396BAB1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A53F67D3C125B415C3098E5 /* SettingsView.swift */; };
+		187EBFF247D2A092150E59DE /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8004E80BF1E79DA287EF04B6 /* PersistenceTests.swift */; };
+		2040583B7174385366138386 /* BodyRegionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974C0D4230D1CDBBA25DCE7 /* BodyRegionMapper.swift */; };
+		248CB3D44EF817DAD694D1CD /* PlacementValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB598170624DEE040E42B2 /* PlacementValidationResult.swift */; };
+		2598E8C3AD7D85E4B2AD5731 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342636131E6E17488E921D6 /* AppModel.swift */; };
+		2BB93349CB0359732D103FA1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D47866F36E4140D3CBDBE1 /* OnboardingView.swift */; };
+		2C75CFB928D8C043A4BE4A8B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11072CE241B82E782FB082D7 /* RootView.swift */; };
+		3A5FD93570F2B42477822D50 /* BodyInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0767162D77F0A749E38FB /* BodyInteractionController.swift */; };
+		429CF2FB4342C2A9EBBAE530 /* BodyRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9114D8294AE9FC3110AD9F98 /* BodyRegion.swift */; };
+		4E8636B35AD0A51B2130DE3E /* HumanBodyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D8552CD56E57110E8E6FC /* HumanBodyScene.swift */; };
+		500C095A04C000393EC816C9 /* Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F06DFD00F2E90B265E83746 /* Placement.swift */; };
+		509CAA466307C07DD57EB46F /* PlacementRecommendationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346598F6CBCA30A0F4E8971C /* PlacementRecommendationEngine.swift */; };
+		50D44D584728DF7122993BB7 /* PlacementValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28429AD296B8892B9D106BE6 /* PlacementValidatorTests.swift */; };
+		5ACA874B34BCCC2627EA45AF /* CycleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132B9A525DF2FFB363294352 /* CycleManager.swift */; };
+		61ECE4772D075DDE0F1C5995 /* BodySide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66DA3A6D0E044EF86FE3451 /* BodySide.swift */; };
+		652EEB5BFFD30272CE9265FB /* PlacementValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF59B5D26776E50BB3176D1 /* PlacementValidator.swift */; };
+		6D4146244369DFAB95BE358D /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF3EADB450AEF3B86A28562 /* DemoData.swift */; };
+		73EC1531CA346C497B3BE063 /* SurfaceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507783C4BA35C85E6C5F4D1 /* SurfaceLocation.swift */; };
+		78A6E750C56106847615E012 /* TrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D145BDDFD7336210280801 /* TrackerView.swift */; };
+		79ACEB6B9346E63256E0FFAE /* BodyRegionDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12440E0359387761167C7BB6 /* BodyRegionDefinitions.swift */; };
+		79BF33C4575A7549D996505B /* NeuproPatchTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4CF8C0AF2E39BB6E6C3D5 /* NeuproPatchTrackerApp.swift */; };
+		880A3B35863B861AD11B341E /* PlacementDistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9246A9C3C878FFA34F0F1A /* PlacementDistanceCalculator.swift */; };
+		91EFC90D2BD8480A84F304AE /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F6F2CD98097159D692DF5 /* TodayView.swift */; };
+		9895A73EB04E66358400F0D7 /* PlacementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5530821320E8A288A5152287 /* PlacementRepository.swift */; };
+		A24822A3BD26E08E9E62E564 /* HumanBodyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD1FA4B4883CD335C870CAF /* HumanBodyModel.swift */; };
+		A30D40B7C9E4B02C2BFBA5B1 /* PlacementConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C8CF12AE25040191CC7DA /* PlacementConfiguration.swift */; };
+		AC6DAFF03751BB6430CEDABC /* SharedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C38386674926F2E032103 /* SharedComponents.swift */; };
+		B5FBEF848F20021ED63AED8C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F417CCB1C82A1222258F919 /* HistoryView.swift */; };
+		CEEE6DFC54ED0161B5CFF940 /* BodyViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B860F92E5E6868D739413BC5 /* BodyViewer.swift */; };
+		D102F590752D019F9B300AA3 /* BodyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2AB55D088E4B1350519183 /* BodyModelTests.swift */; };
+		D2258BAA3F41B825321BBF19 /* PlacementFlowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E135F78B6DB8EAB5D6098 /* PlacementFlowModel.swift */; };
+		FAF570B56C2D668552F5C60C /* PatchMarkerRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B801A5F5854BCC230E8BE9A /* PatchMarkerRenderer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F0E0E43ACC44264C96ACCCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57818D5BF09162469C0881B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7707A065BFCB2BC6D06A924;
+			remoteInfo = NeuproPatchTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11072CE241B82E782FB082D7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		12440E0359387761167C7BB6 /* BodyRegionDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyRegionDefinitions.swift; sourceTree = "<group>"; };
+		132B9A525DF2FFB363294352 /* CycleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleManager.swift; sourceTree = "<group>"; };
+		1F417CCB1C82A1222258F919 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		28429AD296B8892B9D106BE6 /* PlacementValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementValidatorTests.swift; sourceTree = "<group>"; };
+		2B801A5F5854BCC230E8BE9A /* PatchMarkerRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchMarkerRenderer.swift; sourceTree = "<group>"; };
+		346598F6CBCA30A0F4E8971C /* PlacementRecommendationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementRecommendationEngine.swift; sourceTree = "<group>"; };
+		3D87ED146E3C62E9C91AFF10 /* CycleManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleManagerTests.swift; sourceTree = "<group>"; };
+		3DF59B5D26776E50BB3176D1 /* PlacementValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementValidator.swift; sourceTree = "<group>"; };
+		421F6F2CD98097159D692DF5 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		43228B360E26D2238F511D2D /* NeuproPatchTracker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NeuproPatchTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4507783C4BA35C85E6C5F4D1 /* SurfaceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceLocation.swift; sourceTree = "<group>"; };
+		4A53F67D3C125B415C3098E5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4F2C38386674926F2E032103 /* SharedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComponents.swift; sourceTree = "<group>"; };
+		5530821320E8A288A5152287 /* PlacementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementRepository.swift; sourceTree = "<group>"; };
+		5F06DFD00F2E90B265E83746 /* Placement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placement.swift; sourceTree = "<group>"; };
+		61CAFC073E285844A1C3DF28 /* PlacementFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementFlowView.swift; sourceTree = "<group>"; };
+		66D145BDDFD7336210280801 /* TrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerView.swift; sourceTree = "<group>"; };
+		7974C0D4230D1CDBBA25DCE7 /* BodyRegionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyRegionMapper.swift; sourceTree = "<group>"; };
+		7C6C8CF12AE25040191CC7DA /* PlacementConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementConfiguration.swift; sourceTree = "<group>"; };
+		7F9246A9C3C878FFA34F0F1A /* PlacementDistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementDistanceCalculator.swift; sourceTree = "<group>"; };
+		8004E80BF1E79DA287EF04B6 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		8CD0767162D77F0A749E38FB /* BodyInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyInteractionController.swift; sourceTree = "<group>"; };
+		9114D8294AE9FC3110AD9F98 /* BodyRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyRegion.swift; sourceTree = "<group>"; };
+		A2A4CF8C0AF2E39BB6E6C3D5 /* NeuproPatchTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuproPatchTrackerApp.swift; sourceTree = "<group>"; };
+		AB2AB55D088E4B1350519183 /* BodyModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyModelTests.swift; sourceTree = "<group>"; };
+		B860F92E5E6868D739413BC5 /* BodyViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyViewer.swift; sourceTree = "<group>"; };
+		BCF3EADB450AEF3B86A28562 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		BF5E135F78B6DB8EAB5D6098 /* PlacementFlowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementFlowModel.swift; sourceTree = "<group>"; };
+		C8D47866F36E4140D3CBDBE1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DAFB598170624DEE040E42B2 /* PlacementValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementValidationResult.swift; sourceTree = "<group>"; };
+		DEC4DD431C284BAE837DDD26 /* NeuproPatchTrackerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NeuproPatchTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD1FA4B4883CD335C870CAF /* HumanBodyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanBodyModel.swift; sourceTree = "<group>"; };
+		E66DA3A6D0E044EF86FE3451 /* BodySide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySide.swift; sourceTree = "<group>"; };
+		F342636131E6E17488E921D6 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		FD7D8552CD56E57110E8E6FC /* HumanBodyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanBodyScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00890B47CE1714E42FBB1DC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F417CCB1C82A1222258F919 /* HistoryView.swift */,
+				C8D47866F36E4140D3CBDBE1 /* OnboardingView.swift */,
+				4A53F67D3C125B415C3098E5 /* SettingsView.swift */,
+				421F6F2CD98097159D692DF5 /* TodayView.swift */,
+				66D145BDDFD7336210280801 /* TrackerView.swift */,
+				5F7DACD89FC85B43932EA302 /* Components */,
+				38CCCE74DDC7917BC5237106 /* Placement */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0316E4C9D7B8130AA44B0ABD = {
+			isa = PBXGroup;
+			children = (
+				AF5635C89AECDA8294A9824D /* NeuproPatchTracker */,
+				B4DCFE37476566E1126F78B2 /* NeuproPatchTrackerTests */,
+				3D81080B1080E00018B12E04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2534F60F2F9A576D901417D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9114D8294AE9FC3110AD9F98 /* BodyRegion.swift */,
+				E66DA3A6D0E044EF86FE3451 /* BodySide.swift */,
+				5F06DFD00F2E90B265E83746 /* Placement.swift */,
+				DAFB598170624DEE040E42B2 /* PlacementValidationResult.swift */,
+				4507783C4BA35C85E6C5F4D1 /* SurfaceLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38CCCE74DDC7917BC5237106 /* Placement */ = {
+			isa = PBXGroup;
+			children = (
+				BF5E135F78B6DB8EAB5D6098 /* PlacementFlowModel.swift */,
+				61CAFC073E285844A1C3DF28 /* PlacementFlowView.swift */,
+			);
+			path = Placement;
+			sourceTree = "<group>";
+		};
+		3D81080B1080E00018B12E04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43228B360E26D2238F511D2D /* NeuproPatchTracker.app */,
+				DEC4DD431C284BAE837DDD26 /* NeuproPatchTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		448AD98201A4BE8FDC148DE5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F342636131E6E17488E921D6 /* AppModel.swift */,
+				A2A4CF8C0AF2E39BB6E6C3D5 /* NeuproPatchTrackerApp.swift */,
+				11072CE241B82E782FB082D7 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5F7DACD89FC85B43932EA302 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4F2C38386674926F2E032103 /* SharedComponents.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		92369BB99574622B27E88F51 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				132B9A525DF2FFB363294352 /* CycleManager.swift */,
+				7C6C8CF12AE25040191CC7DA /* PlacementConfiguration.swift */,
+				7F9246A9C3C878FFA34F0F1A /* PlacementDistanceCalculator.swift */,
+				346598F6CBCA30A0F4E8971C /* PlacementRecommendationEngine.swift */,
+				3DF59B5D26776E50BB3176D1 /* PlacementValidator.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AF5635C89AECDA8294A9824D /* NeuproPatchTracker */ = {
+			isa = PBXGroup;
+			children = (
+				448AD98201A4BE8FDC148DE5 /* App */,
+				EAAF191314E28642F2B4E126 /* Body */,
+				CD745E753AD565F13B66353B /* Data */,
+				92369BB99574622B27E88F51 /* Domain */,
+				2534F60F2F9A576D901417D7 /* Models */,
+				00890B47CE1714E42FBB1DC0 /* Views */,
+			);
+			path = NeuproPatchTracker;
+			sourceTree = "<group>";
+		};
+		B4DCFE37476566E1126F78B2 /* NeuproPatchTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2AB55D088E4B1350519183 /* BodyModelTests.swift */,
+				3D87ED146E3C62E9C91AFF10 /* CycleManagerTests.swift */,
+				8004E80BF1E79DA287EF04B6 /* PersistenceTests.swift */,
+				28429AD296B8892B9D106BE6 /* PlacementValidatorTests.swift */,
+			);
+			path = NeuproPatchTrackerTests;
+			sourceTree = "<group>";
+		};
+		CD745E753AD565F13B66353B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				12440E0359387761167C7BB6 /* BodyRegionDefinitions.swift */,
+				BCF3EADB450AEF3B86A28562 /* DemoData.swift */,
+				5530821320E8A288A5152287 /* PlacementRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E75DBC9636EC80A43E11DFB2 /* RealityKit */ = {
+			isa = PBXGroup;
+			children = (
+				8CD0767162D77F0A749E38FB /* BodyInteractionController.swift */,
+				B860F92E5E6868D739413BC5 /* BodyViewer.swift */,
+				FD7D8552CD56E57110E8E6FC /* HumanBodyScene.swift */,
+				2B801A5F5854BCC230E8BE9A /* PatchMarkerRenderer.swift */,
+			);
+			path = RealityKit;
+			sourceTree = "<group>";
+		};
+		EAAF191314E28642F2B4E126 /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				7974C0D4230D1CDBBA25DCE7 /* BodyRegionMapper.swift */,
+				DFD1FA4B4883CD335C870CAF /* HumanBodyModel.swift */,
+				E75DBC9636EC80A43E11DFB2 /* RealityKit */,
+			);
+			path = Body;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		564B7533A9897E49E2500A2E /* NeuproPatchTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D48044C6B641F997E83499A /* Build configuration list for PBXNativeTarget "NeuproPatchTrackerTests" */;
+			buildPhases = (
+				4EB759A70F0C119F02A5E5A3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2644F87E632B533DDA82FCBD /* PBXTargetDependency */,
+			);
+			name = NeuproPatchTrackerTests;
+			packageProductDependencies = (
+			);
+			productName = NeuproPatchTrackerTests;
+			productReference = DEC4DD431C284BAE837DDD26 /* NeuproPatchTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7707A065BFCB2BC6D06A924 /* NeuproPatchTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35E995D8E8F66A12A400F03 /* Build configuration list for PBXNativeTarget "NeuproPatchTracker" */;
+			buildPhases = (
+				8C3EB0F8D6049153B11055D5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuproPatchTracker;
+			packageProductDependencies = (
+			);
+			productName = NeuproPatchTracker;
+			productReference = 43228B360E26D2238F511D2D /* NeuproPatchTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57818D5BF09162469C0881B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					564B7533A9897E49E2500A2E = {
+						ProvisioningStyle = Automatic;
+					};
+					E7707A065BFCB2BC6D06A924 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F9C9A9F8348F3F9492D6D8F5 /* Build configuration list for PBXProject "NeuproPatchTracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0316E4C9D7B8130AA44B0ABD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3D81080B1080E00018B12E04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7707A065BFCB2BC6D06A924 /* NeuproPatchTracker */,
+				564B7533A9897E49E2500A2E /* NeuproPatchTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EB759A70F0C119F02A5E5A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D102F590752D019F9B300AA3 /* BodyModelTests.swift in Sources */,
+				08237A317B85915E6B0ABD0C /* CycleManagerTests.swift in Sources */,
+				187EBFF247D2A092150E59DE /* PersistenceTests.swift in Sources */,
+				50D44D584728DF7122993BB7 /* PlacementValidatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3EB0F8D6049153B11055D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2598E8C3AD7D85E4B2AD5731 /* AppModel.swift in Sources */,
+				3A5FD93570F2B42477822D50 /* BodyInteractionController.swift in Sources */,
+				429CF2FB4342C2A9EBBAE530 /* BodyRegion.swift in Sources */,
+				79ACEB6B9346E63256E0FFAE /* BodyRegionDefinitions.swift in Sources */,
+				2040583B7174385366138386 /* BodyRegionMapper.swift in Sources */,
+				61ECE4772D075DDE0F1C5995 /* BodySide.swift in Sources */,
+				CEEE6DFC54ED0161B5CFF940 /* BodyViewer.swift in Sources */,
+				5ACA874B34BCCC2627EA45AF /* CycleManager.swift in Sources */,
+				6D4146244369DFAB95BE358D /* DemoData.swift in Sources */,
+				B5FBEF848F20021ED63AED8C /* HistoryView.swift in Sources */,
+				A24822A3BD26E08E9E62E564 /* HumanBodyModel.swift in Sources */,
+				4E8636B35AD0A51B2130DE3E /* HumanBodyScene.swift in Sources */,
+				79BF33C4575A7549D996505B /* NeuproPatchTrackerApp.swift in Sources */,
+				2BB93349CB0359732D103FA1 /* OnboardingView.swift in Sources */,
+				FAF570B56C2D668552F5C60C /* PatchMarkerRenderer.swift in Sources */,
+				500C095A04C000393EC816C9 /* Placement.swift in Sources */,
+				A30D40B7C9E4B02C2BFBA5B1 /* PlacementConfiguration.swift in Sources */,
+				880A3B35863B861AD11B341E /* PlacementDistanceCalculator.swift in Sources */,
+				D2258BAA3F41B825321BBF19 /* PlacementFlowModel.swift in Sources */,
+				026749238C7E2714CDCF1BCA /* PlacementFlowView.swift in Sources */,
+				509CAA466307C07DD57EB46F /* PlacementRecommendationEngine.swift in Sources */,
+				9895A73EB04E66358400F0D7 /* PlacementRepository.swift in Sources */,
+				248CB3D44EF817DAD694D1CD /* PlacementValidationResult.swift in Sources */,
+				652EEB5BFFD30272CE9265FB /* PlacementValidator.swift in Sources */,
+				2C75CFB928D8C043A4BE4A8B /* RootView.swift in Sources */,
+				15A72D7F03506B6FD396BAB1 /* SettingsView.swift in Sources */,
+				AC6DAFF03751BB6430CEDABC /* SharedComponents.swift in Sources */,
+				73EC1531CA346C497B3BE063 /* SurfaceLocation.swift in Sources */,
+				91EFC90D2BD8480A84F304AE /* TodayView.swift in Sources */,
+				78A6E750C56106847615E012 /* TrackerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2644F87E632B533DDA82FCBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7707A065BFCB2BC6D06A924 /* NeuproPatchTracker */;
+			targetProxy = 3F0E0E43ACC44264C96ACCCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2F1717AC9723D8AD4E32E2F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6E7AB1EDFB962FE4D280BF25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neupro.tracker.NeuproPatchTrackerTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeuproPatchTracker.app/NeuproPatchTracker";
+			};
+			name = Debug;
+		};
+		75D408EEE359F02A4834056D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neupro.tracker.NeuproPatchTrackerTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeuproPatchTracker.app/NeuproPatchTracker";
+			};
+			name = Release;
+		};
+		82ED3026F5E9F4F97B309CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8AD5C082D5CB0E4627D9FC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Neupro Tracker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neupro.tracker.NeuproPatchTracker;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6C571BEDADE77C73D08965D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Neupro Tracker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neupro.tracker.NeuproPatchTracker;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D48044C6B641F997E83499A /* Build configuration list for PBXNativeTarget "NeuproPatchTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7AB1EDFB962FE4D280BF25 /* Debug */,
+				75D408EEE359F02A4834056D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D35E995D8E8F66A12A400F03 /* Build configuration list for PBXNativeTarget "NeuproPatchTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD5C082D5CB0E4627D9FC6B /* Debug */,
+				C6C571BEDADE77C73D08965D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F9C9A9F8348F3F9492D6D8F5 /* Build configuration list for PBXProject "NeuproPatchTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82ED3026F5E9F4F97B309CA8 /* Debug */,
+				2F1717AC9723D8AD4E32E2F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57818D5BF09162469C0881B1 /* Project object */;
+}
