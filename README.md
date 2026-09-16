@@ -1,4 +1,11 @@
-# NEUPRO Patch Placement Tracker (iPhone MVP)
+# NEUPRO Patch Placement Tracker
+
+Two implementations of the same body-first tracker live in this repo:
+
+- **Native iPhone app** (SwiftUI + RealityKit) — this section.
+- **Web app** (`web/`, React + Three.js) deployed to GitHub Pages — see [Web app](#web-app).
+
+## iPhone MVP
 
 A native iPhone app for remembering where a daily NEUPRO® (rotigotine) patch was
 placed. The primary interface is an interactive 3D human body: rotate it with a
@@ -124,3 +131,30 @@ Accessibility identifiers (`logTodayButton`, `bodyViewer`, `confirmPlacementButt
 Authentication, backend/cloud sync, clinician dashboards, EHR or pharmacy
 integrations, dosage/symptom tracking, analytics, and any medical recommendation.
 This project makes no HIPAA compliance claims.
+
+## Web app
+
+`web/` is a React 19 + TypeScript + Vite + Tailwind + React Three Fiber port with
+the same domain rules (14-day cycle, exact-location and yesterday-region blocking,
+side alternation recommendation) and the same procedural body. History is stored
+in the browser's `localStorage`; nothing leaves the device.
+
+```sh
+cd web
+npm install
+npm run dev          # http://localhost:5173/neuropro-tracker/
+npm run typecheck && npm run lint && npm test && npm run build
+```
+
+Append `?demo` to the URL to seed six days of sample history.
+
+### GitHub Pages
+
+`.github/workflows/deploy-pages.yml` builds `web/` and deploys `web/dist` on every
+push to `main` that touches `web/`. One-time setup: repo **Settings → Pages →
+Build and deployment → Source: GitHub Actions**. The app is then served at
+<https://joshnunez-cognition.github.io/neuropro-tracker/>. On iPhone, open it in
+Safari and use Share → **Add to Home Screen** for a full-screen app.
+
+Vite's `base` is `/neuropro-tracker/`; override with `VITE_BASE=/ npm run build`
+for other hosts.

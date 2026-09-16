@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #1f5fbf;
+  --color-brand-dark: #174a96;
+  --color-surface: #f5f7fb;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: var(--color-surface);
+  color: #17202e;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+canvas { touch-action: none; display: block; }
+
+/* drei <Html> label portals must never intercept body gestures */
+[data-testid="body-viewer"] canvas ~ div { pointer-events: none; }
